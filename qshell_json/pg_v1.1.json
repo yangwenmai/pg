@@ -1,0 +1,12 @@
+{
+  "src_dir" : "/Users/xxx/data/axure_docs/pg_v1.1",
+  "access_key": "xxxx",
+  "secret_key": "xxxx",
+  "bucket" : "your_bucket",
+  "key_prefix": "pg_v1.1/",
+  "skip_file_prefixes": ".git",
+  "skip_path_prefixes": ".git",
+  "skip_suffixes": ".DS_Store",
+  "overwrite": true,
+  "rescan_local": true
+}
