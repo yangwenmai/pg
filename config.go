@@ -2,8 +2,7 @@ package main
 
 // Config config
 type Config struct {
-	Addr string
-
+	Addr         string
 	XGitlabToken string `yaml:"x_gitlab_token"`
 	BaseURL      string `yaml:"base_url"`
 	QiniuBucket  string `yaml:"qiniu_bucket"`
@@ -17,6 +16,6 @@ type Config struct {
 var cfg *Config
 
 // InitConfig init config
-func InitConfig(cfg2 *Config) {
-	cfg = cfg2
+func InitConfig(config *Config) {
+	cfg = config
 }

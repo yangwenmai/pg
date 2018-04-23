@@ -140,7 +140,6 @@ func parsePushEvents(ctx *fasthttp.RequestCtx) (map[string]string, string, error
 		return nil, "", errors.New("没有需要更新的目录")
 	}
 
-	// project: https://xxx.gitlab.com/group_name/project_name.git
 	projectName := strings.Split(pushEvents.Project.PathWithNamespace, "/")[1]
 	projectPath := cfg.PrdPath + "/" + projectName
 
