@@ -11,20 +11,6 @@
 
 关键词：`Axure`, `Gitlab`, `Github`, `七牛`, `fasthttp`.
 
-研发团队的工程效率实践，现在越来越多的人开始谈论这个话题，但是说实在的可操作性不大，或者说操作起来难度不小，毕竟每家公司都有自己的实际情况，很难可以直接套用。
-
-本场 Chat 侧重于实践，不会有抽象的概念和理论知识。我会直接拟一个场景来实战《如何通过Gitlab+七牛云存储来构建在线产品需求文档》，一步一步的带领大家构建属于你自己或者你们团队的工程效率实践。
-
-本场 Chat 您将学到如下内容：
-
-- 了解 Axure 产品原型工具
-- 了解 Gitlab/Github webhook
-- 了解 七牛云存储 CDN 分发
-- 基于 fasthttp 开发一个最简单的 HTTP Server
-- 如何设计一个工程效率实践的产品
-- 基于 Gitlab+七牛云存储 构建产品需求在线文档
-- 给你的产品赋予生命力（整合钉钉/Slack等机器人）
-
 ### 目标 ###
 
 1. 快速将 HTML 页面生成一个可预览的在线地址；
@@ -63,10 +49,7 @@ go build
 ./pg -base_url "http://xxxxx.bkt.clouddn.com/" -qiniu_bucket "my-pg" -access_key "xxxxxx" -secret_key "xxxxxx" -qshell_path "/Users/yourname/xxx_tools/qshell-v2.1.7/qshell" -json_path "/Users/yourname/xxx_data/pg-test/json" -prd_path "/Users/yourname/xxx_data/pg-test/prd"
 ```
 
-## 遇到的问题/坑 ##
-
-1. Open account file error, open ~/.qshell/account.json: no such file or directory, please use `account` to set AccessKey and SecretKey first
-
 # 参考资料
 
 1. [一键生成 Github Go 项目 - gpt](https://github.com/yangwenmai/gpt)
+2. [针对本项目的详细阐述博文](https://maiyang.me/2018/04/19/pg-guide/)
